@@ -116,19 +116,18 @@ public class ApacheAccessLog implements Serializable {
   private static final String LOG_ENTRY_PATTERN =
       // 1:IP  2:client 3:user 4:date time                   
       // 5:method 6:req 7:proto   8:respcode 9:size
-      "^(\\S+) (\\S+) (\\S+) \\[([\\w:/]+\\s[+\\-]\\d{4})\\] \"(\\S+) (\\S+) (\\S+)\" (\\d{3}) (\\d+)";
+      "^(\\S+) (\\S+) (\\S+) \\[([\\w:/]+\\s[+\\-]\\d{4})\\] \"(\\S+) (\\S+) (\\S+)\" (\\d{3}) (\\d+|-)";
   private static final Pattern PATTERN = Pattern.compile(LOG_ENTRY_PATTERN);
 
   public static ApacheAccessLog parseFromLogLine(String logline) {
-    System.out.println(">>>>>> " + logline);
+    //System.out.println(">>>>>> " + logline);
     Matcher m = PATTERN.matcher(logline);
     if (!m.find()) {
-      logger.log(Level.ALL, "Cannot parse logline" + logline);
+      logger.log(Level.WARNING, "Cannot parse logline" + logline);
       throw new RuntimeException("Error parsing logline");
     }
-
     return new ApacheAccessLog(m.group(1), m.group(2), m.group(3), m.group(4),
-        m.group(5), m.group(6), m.group(7), m.group(8), m.group(9));
+        m.group(5), m.group(6), m.group(7), m.group(8), (m.group(9).equals("-")) ? "0" : m.group(9));
   }
 
   @Override public String toString() {

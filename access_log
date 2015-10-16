@@ -93,7 +93,6 @@ d207-6-9-183.bchsia.telus.net - - [07/Mar/2004:18:19:16 -0800] "GET /pipermail/c
 64.242.88.10 - - [07/Mar/2004:19:39:40 -0800] "GET /twiki/bin/edit/Main/Qmqpd_authorized_clients?topicparent=Main.ConfigurationVariables HTTP/1.1" 401 12846
 64.242.88.10 - - [07/Mar/2004:19:41:33 -0800] "GET /twiki/bin/edit/Main/Header_address_token_limit?topicparent=Main.ConfigurationVariables HTTP/1.1" 401 12846
 64.242.88.10 - - [07/Mar/2004:19:42:45 -0800] "GET /twiki/bin/edit/Main/Syslog_name?topicparent=Main.ConfigurationVariables HTTP/1.1" 401 12846
-80-219-148-207.dclient.hispeed.ch - - [07/Mar/2004:19:47:36 -0800] "OPTIONS * HTTP/1.0" 200 -
 64.242.88.10 - - [07/Mar/2004:19:49:28 -0800] "GET /twiki/bin/oops/TWiki/TWikiHistory?template=oopsmore&param1=1.61&param2=1.61 HTTP/1.1" 200 11345
 64.242.88.10 - - [07/Mar/2004:19:52:28 -0800] "GET /twiki/bin/view/TWiki/HaroldGottschalk HTTP/1.1" 200 3838
 64.242.88.10 - - [07/Mar/2004:19:54:33 -0800] "GET /twiki/bin/view/TWiki/DefaultPlugin?rev=1.4 HTTP/1.1" 200 7298
@@ -323,8 +322,6 @@ p213.54.168.132.tisdip.tiscali.de - - [08/Mar/2004:05:01:14 -0800] "GET /twiki/b
 200.160.249.68.bmf.com.br - - [08/Mar/2004:05:02:07 -0800] "GET /twiki/pub/TWiki/TWikiLogos/twikiRobot46x50.gif HTTP/1.0" 200 2877
 64.242.88.10 - - [08/Mar/2004:05:03:13 -0800] "GET /twiki/bin/view/Main/WebIndex?rev=1.1 HTTP/1.1" 200 44960
 64.242.88.10 - - [08/Mar/2004:05:13:35 -0800] "GET /mailman/private/hs_support/ HTTP/1.1" 200 1549
-68-174-110-154.nyc.rr.com - - [08/Mar/2004:05:16:15 -0800] "GET /razor.html HTTP/1.1" 200 2869
-68-174-110-154.nyc.rr.com - - [08/Mar/2004:05:16:20 -0800] "GET /favicon.ico HTTP/1.1" 200 1078
 64.242.88.10 - - [08/Mar/2004:05:22:57 -0800] "GET /twiki/bin/attach/Sandbox/WebHome HTTP/1.1" 401 12846
 p213.54.168.132.tisdip.tiscali.de - - [08/Mar/2004:05:23:37 -0800] "GET /twiki/bin/view/Main/SpamAssassinDeleting HTTP/1.1" 200 5543
 66-194-6-70.gen.twtelecom.net - - [08/Mar/2004:05:24:18 -0800] "GET / HTTP/1.1" 200 3169
@@ -340,7 +337,6 @@ p213.54.168.132.tisdip.tiscali.de - - [08/Mar/2004:05:26:16 -0800] "GET /twiki/b
 lj1027.inktomisearch.com - - [08/Mar/2004:05:32:01 -0800] "GET /twiki/bin/view/TWiki/2fa HTTP/1.0" 200 4615
 64.242.88.10 - - [08/Mar/2004:05:34:33 -0800] "GET /twiki/bin/search/Main/SearchResult?scope=text&regex=on&search=Web%20*Changes[^A-Za-z] HTTP/1.1" 200 4829
 64.242.88.10 - - [08/Mar/2004:05:36:56 -0800] "GET /twiki/bin/edit/Main/WebStatistics?t=1078690975 HTTP/1.1" 401 12851
-68-174-110-154.nyc.rr.com - - [08/Mar/2004:05:38:57 -0800] "GET /razor.html HTTP/1.1" 304 -
 64.242.88.10 - - [08/Mar/2004:05:42:06 -0800] "GET /twiki/bin/view/Main/RelayGateway?rev=1.3 HTTP/1.1" 200 4232
 64.242.88.10 - - [08/Mar/2004:05:47:38 -0800] "GET /robots.txt HTTP/1.1" 200 68
 64.242.88.10 - - [08/Mar/2004:05:48:48 -0800] "GET /twiki/bin/rdiff/TWiki/KevinKinnell?rev1=1.4&rev2=1.3 HTTP/1.1" 200 4369
@@ -904,13 +900,6 @@ c-24-20-163-223.client.comcast.net - - [09/Mar/2004:13:15:23 -0800] "GET /twiki/
 c-24-20-163-223.client.comcast.net - - [09/Mar/2004:13:15:33 -0800] "GET /twiki/bin/view/Main/SpamAssassinAndPostFix HTTP/1.1" 200 4034
 c-24-20-163-223.client.comcast.net - - [09/Mar/2004:13:15:49 -0800] "GET /twiki/bin/view/Main/SpamAssassinTaggingOnly HTTP/1.1" 200 5691
 c-24-20-163-223.client.comcast.net - - [09/Mar/2004:13:16:00 -0800] "GET /twiki/bin/view/Main/DCCAndPostFix HTTP/1.1" 200 5253
-h194n2fls308o1033.telia.com - - [09/Mar/2004:13:49:05 -0800] "-" 408 -
-h24-71-236-129.ca.shawcable.net - - [09/Mar/2004:14:43:02 -0800] "GET /mailman HTTP/1.1" 302 301
-h24-71-236-129.ca.shawcable.net - - [09/Mar/2004:14:43:03 -0800] "GET /mailman/listinfo HTTP/1.1" 200 6893
-h24-71-236-129.ca.shawcable.net - - [09/Mar/2004:14:43:04 -0800] "GET /icons/mailman.jpg HTTP/1.1" 304 -
-h24-71-236-129.ca.shawcable.net - - [09/Mar/2004:14:43:05 -0800] "GET /icons/PythonPowered.png HTTP/1.1" 304 -
-h24-71-236-129.ca.shawcable.net - - [09/Mar/2004:14:43:05 -0800] "GET /icons/gnu-head-tiny.jpg HTTP/1.1" 304 -
-h24-71-236-129.ca.shawcable.net - - [09/Mar/2004:14:43:12 -0800] "GET /mailman/listinfo/ppwc HTTP/1.1" 200 6271
 jacksonproject.cnc.bc.ca - - [09/Mar/2004:14:50:15 -0800] "GET / HTTP/1.1" 200 3169
 jacksonproject.cnc.bc.ca - - [09/Mar/2004:14:50:23 -0800] "GET /mailman HTTP/1.1" 302 301
 jacksonproject.cnc.bc.ca - - [09/Mar/2004:14:50:23 -0800] "GET /mailman/listinfo HTTP/1.1" 200 6893
