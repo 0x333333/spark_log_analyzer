@@ -114,7 +114,7 @@ public class ApacheAccessLog implements Serializable {
   // Example Apache log line:
   //   127.0.0.1 - - [21/Jul/2014:9:55:27 -0800] "GET /home.html HTTP/1.1" 200 2048
   private static final String LOG_ENTRY_PATTERN =
-      // 1:IP  2:client 3:user 4:date time                   
+      // 1:IP  2:client 3:user 4:date time
       // 5:method 6:req 7:proto   8:respcode 9:size
       "^(\\S+) (\\S+) (\\S+) \\[([\\w:/]+\\s[+\\-]\\d{4})\\] \"(\\S+) (\\S+) (\\S+)\" (\\d{3}) (\\d+|-)";
   private static final Pattern PATTERN = Pattern.compile(LOG_ENTRY_PATTERN);

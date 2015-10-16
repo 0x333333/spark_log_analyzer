@@ -63,7 +63,7 @@ public class LogAnalyzer {
     //   are called on that RDD.
     JavaRDD<Long> contentSizes =
        accessLogs.map(ApacheAccessLog::getContentSize).cache();
-    System.out.println(String.format("Content Size Avg: %s, Min: %s, Max: %s",
+    System.out.println(String.format("> Content Size Avg: %s, Min: %s, Max: %s",
        contentSizes.reduce(SUM_REDUCER) / contentSizes.count(),
        contentSizes.min(Comparator.naturalOrder()),
        contentSizes.max(Comparator.naturalOrder())));
@@ -73,26 +73,25 @@ public class LogAnalyzer {
         accessLogs.mapToPair(log -> new Tuple2<>(log.getResponseCode(), 1L))
             .reduceByKey(SUM_REDUCER)
             .take(100);
-    System.out.println(String.format("Response code counts: %s", responseCodeToCount));
+    System.out.println(String.format("> Response code counts: %s", responseCodeToCount));
 
     // Any IPAddress that has accessed the server more than 10 times.
-    List<String> ipAddresses =
+    List<Tuple2<String, Long>> ipAddresses =
         accessLogs.mapToPair(log -> new Tuple2<>(log.getIpAddress(), 1L))
             .reduceByKey(SUM_REDUCER)
             .filter(tuple -> tuple._2() > 10)
-            .map(Tuple2::_1)
+            // .map(Tuple2::_1)
             .take(100);
-    System.out.println(String.format("IPAddresses > 10 times: %s", ipAddresses));
+    System.out.println(String.format("> IPAddresses > 10 times: %s", ipAddresses));
 
     // Top Endpoints.
     List<Tuple2<String, Long>> topEndpoints = accessLogs
         .mapToPair(log -> new Tuple2<>(log.getEndpoint(), 1L))
         .reduceByKey(SUM_REDUCER)
         .top(10, new ValueComparator<>(Comparator.<Long>naturalOrder()));
-    System.out.println(String.format("Top Endpoints: %s", topEndpoints));
+    System.out.println(String.format("> Top Endpoints: %s", topEndpoints));
 
     // Stop the Spark Context before exiting.
     sc.stop();
   }
 }
-
